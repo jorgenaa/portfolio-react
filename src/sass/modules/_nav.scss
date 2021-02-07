@@ -1,0 +1,115 @@
+
+
+.nav{
+    flex: 6;
+    line-height: 40px;
+    margin: auto;
+    display: flex;
+    z-index: 6;
+  
+    @include mediaSm {
+        display: none;
+    }
+    &__link{
+        text-decoration: none;
+        padding: 0 20px;
+        cursor: pointer;
+	&--color {
+		color: $lightGrey;
+	}
+
+	&--hover {
+		&:hover {
+			color: $aquaMarine;
+        }
+	}
+	&--active {
+        color:  $aquaMarine;
+
+    }
+}
+&__divider {
+    border-right: 1px solid $lightGrey;
+    height: 40px;
+    @include mediaMd {
+        display: none;
+    }
+ }
+
+}
+
+.nav-hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $lightGrey;
+    font-size: 22px;
+    margin-right: 16px;
+    margin-top: 25px;
+    display: none;
+    z-index: 5;
+    @include mediaSm {
+        display: block;
+    }
+}
+.nav-close {
+    color: $lightGrey;
+    font-size: 22px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 25px;
+    display: none;
+}
+.nav-input {
+    display: none;
+}
+
+#hamburger-menu:checked ~ .navbar {
+    display: flex;
+    flex-direction: column;
+    
+}
+#hamburger-menu:checked ~ .nav-hamburger:before {
+    content: "\f00d";
+ 
+ }
+
+ .navbar {
+    display: none;
+    background-color: $blueOpacity;
+  
+   
+    &--responsive {
+        @include mediaMin769px {
+            display:none;
+        }
+        @include mediaMd {
+            display:block;
+           
+        }
+    }
+    &__link {
+       cursor: pointer;
+        &:nth-child(1){
+            border-top: solid 1px $aquaMarine;
+        }
+            
+        @extend .nav__link;
+        padding: 10px;
+       
+        text-align: center;
+        &--color {
+            color: $lightGrey;
+        }
+    
+        &--hover {
+            &:hover {
+                color: $aquaMarine;
+               
+            }
+            &--active {
+                color:  $aquaMarine;
+            }
+        }
+    }
+ }

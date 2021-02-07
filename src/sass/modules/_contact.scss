@@ -1,0 +1,138 @@
+.contact {
+	height: 700px;
+	background-color: $aquaMarine;
+	&__heading {
+		color: $blue;
+		border-bottom: solid 1px $blue;
+		@include mediaMd {
+			font-size: 26px;
+		}
+
+		@include mediaSm {
+			font-size: 22px;
+		}
+	}
+
+	&__form {
+		font-family: 'robotoRegular';
+		width: 60%;
+		margin: 16px auto 0;
+		font-size: 16px;
+		@include mediaLg {
+			width: 80%;
+		}
+		@include mediaMd {
+			width: 90%;
+		}
+		@include mediaSm {
+			width: 90%;
+		}
+	}
+
+	&__form-element {
+		margin: 0 0 16px;
+	}
+
+	&__form-element:nth-child(1) {
+		width: 49%;
+		float: left;
+		@include mediaSm {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	&__form-element:nth-child(2) {
+		width: 49%;
+		float: right;
+		@include mediaSm {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	&__input {
+		padding: 10px;
+		width: 100%;
+		outline: none;
+		letter-spacing: normal;
+		word-spacing: normal;
+		text-transform: none;
+		text-indent: 0px;
+		text-shadow: none;
+		border: 2px solid $blue;
+		background-color: $lightGrey;
+		&--error {
+			&::-webkit-input-placeholder {
+				color: $pink;
+			}
+		}
+	}
+
+	&__message {
+		font-size: 14px;
+		padding: 10px;
+		width: 100%;
+		outline: none;
+		border: 2px solid $blue;
+		background-color: $lightGrey;
+	}
+	&__label {
+		vertical-align: top;
+		width: 20%;
+		display: inline-block;
+		padding: 10px 5px;
+		font-family: $robotoBold;
+		color: $blue;
+	}
+
+	&__btn {
+		padding: 11px 20px;
+		border: solid 2px $blue;
+		cursor: pointer;
+		font-weight: regular;
+		outline: none;
+		transition: 0.5s;
+		@include mediaSm {
+			width: 100%;
+		}
+		&--blue {
+			color: $lightGrey;
+			background-color: $blue;
+		}
+
+		&--hover {
+			&:hover {
+				background-color: $lightGrey;
+				color: $blue;
+			}
+		}
+		&--disabled {
+			&:disabled {
+				color: $lightBlue;
+				background-color: $lightGrey;
+				border-color: $blue;
+			}
+		}
+	}
+
+	&__response-message {
+		font-weight: bold;
+		width: 60%;
+		color: $blue;
+		padding: 10px;
+		margin: 16px auto;
+	}
+	&__loader {
+		border: 16px solid $lightGrey;
+		border-top: 16px solid $pink;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+		position: absolute;
+		left: 45%;
+		top: 20%;
+		display: none;
+	}
+}
