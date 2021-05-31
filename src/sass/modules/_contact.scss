@@ -35,6 +35,13 @@
 		padding: 1.5rem 2.5rem;
 		margin-bottom: 1rem;
 		transition: all 0.5s ease-out;
+		@include mediaMd {
+			font-size: 22px;
+			padding: 1rem 2rem;
+		}
+		@include mediaSm {
+			font-size: 18px;
+		}
 		&--hover {
 			&:hover {
 				background: $blue;
