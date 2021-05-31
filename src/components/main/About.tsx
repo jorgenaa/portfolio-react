@@ -11,13 +11,13 @@ const About: React.FC = () => {
 				<div className="about__item">
 					<h3 className="about__item-heading">Hello I'm Jørgen</h3>
 					<p className="about__text">
-						I'm a junior Front-End developer from Norway with high focus on user
+						I'm a Front-End developer from Norway with high focus on user
 						experience, user interface and technology.
 					</p>
 					<p className="about__text">
-						I recently completed my education at Noroff, and I am now open to
+						I recently completed my education at Noroff, and I am now open for
 						real projects where I get the opportunity to contribute my
-						qualities.
+						skills.
 					</p>
 					<p className="about__text">
 						So far I have acquired powerfull skills for building appealing and

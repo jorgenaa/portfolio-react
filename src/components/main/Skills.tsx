@@ -11,6 +11,7 @@ import XD from '../../assets/icons/XD.png';
 import Wordpress from '../../assets/icons/Wordpress.png';
 import Scrum from '../../assets/icons/Scrum.png';
 import ReactIcon from '../../assets/icons/react.png';
+import TypescriptIcon from '../../assets/icons/typescript.png';
 
 const icons = [
 	HTML,
@@ -25,20 +26,21 @@ const icons = [
 	Wordpress,
 	Scrum,
 	ReactIcon,
+    TypescriptIcon
 ];
 
 const Skills: React.FC = () => {
 	return (
 		<section id="skills" className="skills">
 			<h2 className="skills__heading">My Skills</h2>
+            <h3 className="contact__sm-heading">This is how you can reach me...</h3>
 			<div className="skills__row">
 				{icons.map((icon: any) => {
 					return (
 						<img
-							className="skills__icon animated"
+							className="skills__icon"
 							src={icon}
 							alt="icon"
-							data-aos="fade-right"
 						/>
 					);
 				})}
