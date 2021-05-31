@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
 	return (
 		<section id="skills" className="skills">
 			<h2 className="skills__heading">My Skills</h2>
-            <h3 className="contact__sm-heading">This is how you can reach me...</h3>
+            <h3 className="contact__sm-heading">These are the tools I use in my workflow.</h3>
 			<div className="skills__row">
 				{icons.map((icon: any) => {
 					return (
