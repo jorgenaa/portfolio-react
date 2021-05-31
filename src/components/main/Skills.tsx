@@ -12,21 +12,39 @@ import Wordpress from '../../assets/icons/Wordpress.png';
 import Scrum from '../../assets/icons/Scrum.png';
 import ReactIcon from '../../assets/icons/react.png';
 
-const icons = [HTML, CSS, JS, Bootstrap, Sass, Github, Illustrator, Photoshop, XD, Wordpress, Scrum, ReactIcon];
+const icons = [
+	HTML,
+	CSS,
+	JS,
+	Bootstrap,
+	Sass,
+	Github,
+	Illustrator,
+	Photoshop,
+	XD,
+	Wordpress,
+	Scrum,
+	ReactIcon,
+];
 
 const Skills: React.FC = () => {
-  
-    return ( 
-            <section id="skills" className="skills">
-                <h2 className="skills__heading">My Skills</h2>
-                <div className="skills__row">
-                     {icons.map((icon: any) => {
-                        return <img className="skills__icon animated" src={icon} alt="icon" data-aos="fade-right" />
-                         
-                    })}
-                </div>
-            </section>
-            )
-        }
+	return (
+		<section id="skills" className="skills">
+			<h2 className="skills__heading">My Skills</h2>
+			<div className="skills__row">
+				{icons.map((icon: any) => {
+					return (
+						<img
+							className="skills__icon animated"
+							src={icon}
+							alt="icon"
+							data-aos="fade-right"
+						/>
+					);
+				})}
+			</div>
+		</section>
+	);
+};
 
 export default Skills;
