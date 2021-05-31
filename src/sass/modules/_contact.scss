@@ -16,6 +16,10 @@
 		margin: 0 1rem;
 		@include mediaMd {
 			text-align: center;
+			font-size: 26px;
+		}
+		@include mediaSm {
+			font-size: 22px;
 		}
 	}
 	&__list {
