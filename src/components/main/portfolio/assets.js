@@ -7,6 +7,12 @@ import HolidazeImg from '../../../assets/img/bryggen.jpg';
 export const assets = [
 	{
 		icon: 'assets/icons/GitHub.png',
+		img: CodeImg,
+		github: 'https://github.com/jorgenaa/nextjs_redux_todo-app',
+		website: 'https://nextjsreduxtodoapp.vercel.app/',
+	},
+	{
+		icon: 'assets/icons/GitHub.png',
 		img: HolidazeImg,
 		github: 'https://github.com/jorgenaa/project-exam-2',
 		website: 'https://holidaze-project-exam-2.netlify.app/',
