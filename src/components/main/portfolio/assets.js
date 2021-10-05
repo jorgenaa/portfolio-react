@@ -22,7 +22,7 @@ export const assets = [
 		icon: 'assets/icons/GitHub.png',
 		img: CodeImg,
 		github: 'https://github.com/jorgenaa/JS2-CA',
-		website: '#',
+		website: '',
 	},
 	{
 		title: 'Covid App',

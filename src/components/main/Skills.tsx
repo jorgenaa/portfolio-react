@@ -33,9 +33,10 @@ const Skills: React.FC = () => {
 			<h2 className="skills__heading">My Skills</h2>
             <h3 className="contact__sm-heading">Some of the common tools I use in my workflow</h3>
 			<div className="skills__row">
-				{icons.map((icon: any) => {
+				{icons.map((icon: any, index: any) => {
 					return (
 						<img
+							key={index}
 							className="skills__icon"
 							src={icon}
 							alt="icon"

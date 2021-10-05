@@ -9,6 +9,9 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({name, img, github, website}: Props) => {
+
+   
+
     return (
         <div className="portfolio__card animated" data-aos="fade-right">
         <div className="portfolio__card-body">
@@ -21,10 +24,15 @@ const Card: React.FC<Props> = ({name, img, github, website}: Props) => {
             <FaGithub className="portfolio__icon" />
                 Github
             </a>	
-            <a href={website} className="portfolio__btn portfolio__btn--pink portfolio__btn--hover">
-               <FaEye className="portfolio__icon" />
-                Project
-            </a>
+            {!website ? 
+                <a href={website} className="portfolio__btn portfolio__btn--pink portfolio__btn--disabled">
+                    <FaEye className="portfolio__icon" />
+                    Project
+                </a> :  
+                <a href={website} className="portfolio__btn portfolio__btn--pink portfolio__btn--hover">
+                    <FaEye className="portfolio__icon" />
+                    Project
+                </a>}
         </div>
     </div>
     )
