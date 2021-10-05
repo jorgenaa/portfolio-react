@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
 			<div className="portfolio__cards">
 				{assets.map((item: any, index: any) => {
 					const { title, img, github, website } = item;
-					return <Card name={title} img={img} github={github} website={website} />;
+					return <Card key={index} name={title} img={img} github={github} website={website} />;
 				})}
 			</div>
 		</section>

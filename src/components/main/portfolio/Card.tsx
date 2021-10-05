@@ -27,7 +27,7 @@ const Card: React.FC<Props> = ({name, img, github, website}: Props) => {
             {!website ? 
                 <a href={website} className="portfolio__btn portfolio__btn--pink portfolio__btn--disabled">
                     <FaEye className="portfolio__icon" />
-                    Project
+                    No website available 
                 </a> :  
                 <a href={website} className="portfolio__btn portfolio__btn--pink portfolio__btn--hover">
                     <FaEye className="portfolio__icon" />
