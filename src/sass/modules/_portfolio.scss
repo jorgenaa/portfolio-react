@@ -43,7 +43,18 @@
 	&__card {
 		background-color: $blue;
 	}
-
+	&__card-imgContainer {
+		position: relative;
+		display: inline-block;
+	}
+	&__card-title {
+		position: absolute;
+		top: 40%;
+		left: 0;
+        right: 0;
+		text-align: center;
+		color: $lightGrey;
+	}
 
 	&__btn {
 		display: block;

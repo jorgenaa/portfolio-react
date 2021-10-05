@@ -9,8 +9,8 @@ const Portfolio: React.FC = () => {
 			<h2 className="portfolio__heading">Portfolio</h2>
 			<div className="portfolio__cards">
 				{assets.map((item: any, index: any) => {
-					const { img, github, website } = item;
-					return <Card img={img} github={github} website={website} />;
+					const { title, img, github, website } = item;
+					return <Card name={title} img={img} github={github} website={website} />;
 				})}
 			</div>
 		</section>
