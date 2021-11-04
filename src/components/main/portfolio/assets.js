@@ -30,11 +30,5 @@ export const assets = [
 		github: 'https://github.com/jorgenaa/Covid-19-app',
 		website: 'https://jorgenaa.github.io/Covid-19-app/',
 	},
-	{
-		title: 'How to apply fonts in order to enhance the legibility',
-		img: CodeImg,
-		github: 'https://github.com/jorgenaa/Design_2_Module_Assignment',
-		website: 'https://jorgenaa.github.io/Design_2_Module_Assignment/',
-	},
 	
 ];
